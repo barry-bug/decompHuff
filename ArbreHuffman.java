@@ -51,5 +51,9 @@ public class ArbreHuffman {
 		}
 		return index;
 	}
-
+	
+	/*méthode qui permet de récupérer le noeud racine de l'arbre*/
+	public Noeud getracine() {
+		return noeuds.get(0);
+	}
 }
