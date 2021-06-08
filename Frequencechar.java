@@ -13,3 +13,10 @@ public class FrequenceChar {
 	private List<Noeud> feuilles;  /* Les feuilles sont des listes de noeud: ils correspondent aux extrémités de l'arbre*/
 	
 	/*Constructeur et initialisation */
+	public FrequenceChar(String input) {
+		text = input;
+		frequences = new TreeMap<Character, Integer>();
+		Frequencecaract();
+		feuilles = new ArrayList<>();
+		Deffeuilles(); 
+	}
