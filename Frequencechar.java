@@ -20,3 +20,26 @@ public class FrequenceChar {
 		feuilles = new ArrayList<>();
 		Deffeuilles(); 
 	}
+	
+		/* On crée un table de caractères du texte donné en comptant pour chacun d'entre eux sa fréquence d'apparition */
+	private void Frequencecaract() {
+		char[] table = text.toCharArray();
+		for (char car : table) {
+			if(frequences.containsKey(car)) {
+				frequences.put(car, frequences.get(car) + 1);
+			} else {
+				frequences.put(car, 1);
+			}
+		}
+	}
+	
+	/*Définir les noeuds feuilles parmi les noeuds */
+	private void Deffeuilles() {
+		for(Character c : frequences.keySet()) {
+			feuilles.add(new Noeud(c, frequences.get(c)));
+		}
+	}
+	
+	
+		/*Getter et setter*/
+
