@@ -47,4 +47,25 @@ public class Decompresser {
 	        return text.toString();
 	    }
 	    
+		    
+	    /*Getter et Setters*/
+	    
+
+		public String getCoded() {
+			return coded;
+		}
+
+		public void setCoded(String coded) {
+			this.coded = coded;
+		}
+
+		public Noeud getRacine() {
+			return racine;
+		}
+
+		public void setRacine(Noeud racine) {
+			this.racine = racine;
+		}
+	    
+	   
 	   
