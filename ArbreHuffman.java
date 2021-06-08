@@ -12,7 +12,9 @@ public class ArbreHuffman {
 	public ArbreHuffman(List<Noeud> nodes) {
 		noeuds = nodes;
 		createTree();
-		/*Méthode permettant de créer l'arbre */
+	}
+	
+	/*Méthode permettant de créer l'arbre */
 	private void createTree() {
 		int a;
 		int b;
@@ -36,3 +38,18 @@ public class ArbreHuffman {
 	
 	/*Création de la méthode qui permet de trouver le noeud qui a la plus petite fréquence.*/
 	private int min() {
+		int next;
+		int min = noeuds.get(0).getFreq();
+		int index = 0;
+		
+		for (int i = 0; i < noeuds.size() - 1; i++) {
+			next = noeuds.get(i + 1).getFreq();
+			if (min >= next) {
+				min = next;
+				index = i + 1;
+			}
+		}
+		return index;
+	}
+
+}
