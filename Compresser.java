@@ -39,4 +39,4 @@ public class Compresser {
 	            codage.deleteCharAt(codage.length() - 1);
 	        }
 
-	    }
+	    
