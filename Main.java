@@ -26,8 +26,8 @@ public class Main {
 		
 		//String testString = readFile("", Charset.defaultCharset());
 
-		/*on recupere le texte qu'on souhaite traiter sous forme de string (voir classe jjj)*/
-		String texte= jjjjj.readFile("mettre ici le chemin .txt", StandardCharsets.UTF_8);
+		/*on recupere le texte qu'on souhaite traiter sous forme de string (voir classe FiletoString)*/
+		String texte= FiletoString.readFile("mettre ici le chemin .txt", StandardCharsets.UTF_8);
 		
 		/*le traitement commence*/
 		
